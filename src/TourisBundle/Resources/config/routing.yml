@@ -1,0 +1,3 @@
+touris_homepage:
+    path:     /
+    defaults: { _controller: TourisBundle:Default:index }

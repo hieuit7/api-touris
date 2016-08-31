@@ -1,0 +1,15 @@
+version: '2'
+services:
+  web:
+    build: .
+    links:
+      - "mongo"
+      - "mysql"
+    environment:
+      - MYSQL_ROOT_PASSWORD=12345678
+  mongo:
+    image: mongo
+  mysql:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=12345678

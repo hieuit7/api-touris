@@ -1,0 +1,3 @@
+touris:
+    resource: "@TourisBundle/Resources/config/routing.yml"
+    prefix:   /
